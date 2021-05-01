@@ -28,6 +28,9 @@
           <p><%= alert %></p>
         </div>
       <% end %>
+      <% flash.each do |_, value|%>
+        <div><%= value %></div>
+      <% end %>
       <%= yield %>
     </div>
   </body>

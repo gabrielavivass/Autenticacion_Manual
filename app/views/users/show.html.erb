@@ -1,0 +1,6 @@
+<dic class="row">
+    <% @user.stories.reverse.each do |story| %>
+        <%= image_tag(story.picture) %>
+        <h3><% story.title %></h3>
+    <% end %>
+</div>
